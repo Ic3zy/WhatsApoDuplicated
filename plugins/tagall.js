@@ -17,7 +17,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     var sonuc = grup['participants'].map((member) => {
         if (member.jid.split('@')[0] === user.split('@')[0] && member.isAdmin) return true; else; return false;
     });
-    return sonuc.includes(true);
+    return sonuc.includes(false);
 }
 
 Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
