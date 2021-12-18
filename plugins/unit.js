@@ -35,7 +35,7 @@ Asena.addCommand({pattern: 'unit ?(.*)', fromMe: true, desc: description, usage:
   var formatter = auth_messages.success.replace('{number}', splitted_text[0]).replace('{unit1}', splitted_text[1]).replace('{unit2}', splitted_text[2]).replace('{result}', string_result)
   await message.client.sendMessage(message.jid, formatter, MessageType.text, { quoted: message.data })
 }));
-Asena.addCommand({pattern: 'bitunit ?(.*)', fromMe: wk, desc: bit, usage: 'bitunit 1 gb mb // bitunit <number> <unit1> <unit2>'}, (async (message, match) => {
+Asena.addCommand({pattern: 'bitunit ?(.*)', fromMe: true, desc: bit, usage: 'bitunit 1 gb mb // bitunit <number> <unit1> <unit2>'}, (async (message, match) => {
   var splitted_text = match[1].split(' ')
   var auth_messages = await WhatsAsenaStack.unit_byte_msg(Config.LANG)
   if (splitted_text.length < 3) {
