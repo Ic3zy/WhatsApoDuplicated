@@ -1212,7 +1212,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Asena.addCommand({pattern: 'avec', fromMe: trye, dontAddCommandList: true}, (async (message, match) => {   
+    Asena.addCommand({pattern: 'avec', fromMe: true, dontAddCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
