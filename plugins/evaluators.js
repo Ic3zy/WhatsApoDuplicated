@@ -55,7 +55,7 @@ if (Config.LANG == 'RU') bdesc = 'Отправляет аудио, видео и
 if (Config.LANG == 'ES') bdesc = 'Envía audio, video y fotos dentro del servidor.', berr = '*¡El archivo que está buscando no está disponible en el servidor!*', need_way = '*¡Ruta de archivo requerida!*'
 if (Config.LANG == 'ID') bdesc = 'Ini mengirimkan audio, video dan foto di dalam server.', berr = '*File yang Anda cari tidak tersedia di server!*', need_way = '*Jalur File Diperlukan!*'
 if (Config.LANG == 'ML') bdesc = 'സെർവറിനുള്ളിൽ ഓഡിയോ, വീഡിയോ, ഫോട്ടോകൾ അയയ്ക്കുന്നു.', berr = '*നിങ്ങൾ തിരയുന്ന ഫയൽ സെർവറിൽ ലഭ്യമല്ല!*', need_way = '*ഫയൽ പാത്ത് ആവശ്യമാണ്!*'
-let wk_q = Config.WORKTYPE == 'public' ? false : true
+let wk_q = Config.WORKTYPE == 'public' ? true : true
 Asena.addCommand({pattern: 'bashmedia ?(.*)', fromMe: wk_q, desc: bdesc, usage: 'video.mp4 && media/gif/pic.mp4'}, (async (message, match) => {    
     var id = message.jid
     try {
@@ -75,7 +75,7 @@ Asena.addCommand({pattern: 'bashmedia ?(.*)', fromMe: wk_q, desc: bdesc, usage: 
         await message.client.sendMessage(id,berr, MessageType.text)
     }
 }));
-let wk_ad = Config.WORKTYPE == 'public' ? false : true
+let wk_ad = Config.WORKTYPE == 'public' ? true : true
 var addsdesc = ''
 var rep_add = ''
 var suc_add = ''
@@ -154,7 +154,7 @@ async function antlch() {
 antlch()
 var ldc = ''
 if (Config.LANG == 'AZ') ldc = '*Bağlantı Aşkarlandı!*'
-if (Config.LANG == 'TR') ldc = '*‎Link Tespit Edildi!*'
+if (Config.LANG == 'TR') ldc = '*‎ Amk Oğlunun Attığı Mesajda Link Tespit Edildi!*'
 if (Config.LANG == 'EN') ldc = '*Link Detected!*'
 if (Config.LANG == 'ML') ldc = '*ലിങ്ക് കണ്ടെത്തി!*'
 if (Config.LANG == 'ID') ldc = '*Tautan Terdeteksi!*'
@@ -217,7 +217,7 @@ Asena.addCommand({pattern: 'term ?(.*)', fromMe: true, desc: Lang.TERM_DESC}, (a
         return await message.client.sendMessage(id,'```' + user + ':~# ' + match[1] + '\n' + stdout + '```',MessageType.text);
       });
 }));
-let wk = Config.WORKTYPE == 'public' ? false : true
+let wk = Config.WORKTYPE == 'public' ? true : true
 var medinfo = ''
 if (Config.LANG == 'TR') medinfo = 'Yanıtlanan videonun teknik bilgileri gösterir.'
 if (Config.LANG == 'EN') medinfo = 'Shows the technical information of the replied video.'
@@ -272,7 +272,7 @@ Asena.addCommand({pattern: 'mediainfo$', fromMe: wk, desc: medinfo}, (async (mes
 var sucmsg = ''
 var pmmm = ''
 var psmm = ''
-if (Config.LANG == 'TR') sucmsg = '*Mesaj Başarıyla Gönderildi ✅*', pmmm = 'Yanıt verilen kişiye özelden mesaj gönderir.', psmm = 'Yanıt verilen kişiye özelden sesli mesaj gönderir.'
+if (Config.LANG == 'TR') sucmsg = '*Mesaj Başarıyla Gönderildi Efendim ✅*', pmmm = 'Yanıt verilen kişiye özelden mesaj gönderir.', psmm = 'Yanıt verilen kişiye özelden sesli mesaj gönderir.'
 if (Config.LANG == 'EN') sucmsg = '*Message Sent Successfully ✅*', pmmm = 'Sends a private message to the replied person.', psmm = 'Sends a private voice message to the respondent.'
 if (Config.LANG == 'AZ') sucmsg = '*Mesaj Uğurla Göndərildi ✅*', pmmm = 'Cavablandırılan şəxsə xüsusi mesaj göndərir.', psmm = 'Cavabdehə xüsusi səs mesajı göndərir.'
 if (Config.LANG == 'ES') sucmsg = '*Mensaje enviado con éxito ✅*', pmmm = 'Envía un mensaje privado a la persona que respondió.', psmm = 'Envía un mensaje de voz privado al encuestado.'

@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'unvoice', fromMe: false, desc: Lang.UV_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage(Lang.UV_REPLY);
         var downloading = await message.client.sendMessage(message.jid,Lang.UV_PROC,MessageType.text);

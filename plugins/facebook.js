@@ -8,7 +8,7 @@ const Asena = require('../events');
 const Config = require('../config');
 const WhatsAsenaStack = require('whatsdark-npm');
 const axios = require('axios')
-let wk = Config.WORKTYPE == 'public' ? false : true
+let wk = Config.WORKTYPE == 'public' ? true : true
 
 var CLR_DESC = ''
 var wr = ''

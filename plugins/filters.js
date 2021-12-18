@@ -14,7 +14,7 @@ const Language = require('../language');
 const Lang = Language.getString('filters');
 
 var f_rep = ''
-if (Config.LANG == 'TR') f_rep = '*Filtre Ayarlandı ✅*'
+if (Config.LANG == 'TR') f_rep = '*Filtre Ayarlandı Efendim ✅*'
 if (Config.LANG == 'EN') f_rep = '*Filter Setted ✅*'
 if (Config.LANG == 'AZ') f_rep = '*Filtr Düzəldildi ✅*'
 if (Config.LANG == 'ES') f_rep = '*Filtro Ajustado ✅*'

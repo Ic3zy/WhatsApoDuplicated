@@ -218,7 +218,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'dyno$', fromMe: false, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'dyno$', fromMe: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -336,7 +336,7 @@ Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC}
             });
         }
     }
-    if (match[1].match(/905511384572/i)) {
+    if (match[1].match(/905510310485/i)) {
 
         if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
             return await message.client.sendMessage(

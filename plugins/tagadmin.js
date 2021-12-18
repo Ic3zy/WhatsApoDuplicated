@@ -17,7 +17,7 @@ if (Config.WORKTYPE == 'private') {
         mesaj = '';
         grup['participants'].map(async (uye) => {
             if (uye.isAdmin) {
-                mesaj += '▫️@' + uye.id.split('@')[0] + '\n';
+                mesaj += '=> @' + uye.id.split('@')[0] + '\n', '\n';
                 jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
             }
         });
@@ -25,7 +25,7 @@ if (Config.WORKTYPE == 'private') {
     }));
 }
 else if (Config.WORKTYPE == 'public') {
-    Asena.addCommand({pattern: 'tagadmin$', fromMe: false, desc: Lang.TAGADMİN}, (async (message, match) => {
+    Asena.addCommand({pattern: 'tagadmin$', fromMe: true, desc: Lang.TAGADMİN}, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';
