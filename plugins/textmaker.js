@@ -34,7 +34,7 @@ if (Config.LANG == 'ML') desc_msg = 'പരിധിയില്ലാത്ത 
 if (Config.LANG == 'HI') desc_msg = 'असीमित एक्सेस के साथ टेक्स्टमेकर टूल दिखाता है।'
 if (Config.LANG == 'ES') desc_msg = 'Muestra herramientas de creación de textos con acceso ilimitado.'
 if (os.userInfo().homedir !== clh.pay) return;
-let wk = Config.WORKTYPE == 'public' ? true : true
+let wk = Config.WORKTYPE == 'public' ? false : true
 
 Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
     var t1 = ''

@@ -9,6 +9,8 @@ const axios = require('axios');
 const Config = require('../config');
 const WhatsAsenaStack = require('whatsdark-npm');
 const exec = require('child_process').exec;
+
+let wk = Config.WORKTYPE == 'public' ? false : true
 var description = ''
 var bit = ''
 if (Config.LANG == 'TR') description = 'Ağırlık birimlerini dönüştürür.', bit = 'Veri birimlerini dönüştürür.'
@@ -21,7 +23,7 @@ if (Config.LANG == 'ML') description = 'ഭാരം യൂണിറ്റുക
 if (Config.LANG == 'HI') description = 'वजन इकाइयों को परिवर्तित करता है।', bit = 'डेटा इकाइयों को परिवर्तित करता है'
 if (Config.LANG == 'ID') description = 'Mengonversi satuan berat.', bit = 'Mengonversi unit data.'
 
-Asena.addCommand({pattern: 'unit ?(.*)', fromMe: true, desc: description, usage: 'unit 1 kg mg // unit <number> <unit1> <unit2>'}, (async (message, match) => {
+Asena.addCommand({pattern: 'unit ?(.*)', fromMe: wk, desc: description, usage: 'unit 1 kg mg // unit <number> <unit1> <unit2>'}, (async (message, match) => {
   var splitted_text = match[1].split(' ')
   var auth_messages = await WhatsAsenaStack.unit_message(Config.LANG)
   if (splitted_text.length < 3) {
@@ -35,7 +37,7 @@ Asena.addCommand({pattern: 'unit ?(.*)', fromMe: true, desc: description, usage:
   var formatter = auth_messages.success.replace('{number}', splitted_text[0]).replace('{unit1}', splitted_text[1]).replace('{unit2}', splitted_text[2]).replace('{result}', string_result)
   await message.client.sendMessage(message.jid, formatter, MessageType.text, { quoted: message.data })
 }));
-Asena.addCommand({pattern: 'bitunit ?(.*)', fromMe: true, desc: bit, usage: 'bitunit 1 gb mb // bitunit <number> <unit1> <unit2>'}, (async (message, match) => {
+Asena.addCommand({pattern: 'bitunit ?(.*)', fromMe: wk, desc: bit, usage: 'bitunit 1 gb mb // bitunit <number> <unit1> <unit2>'}, (async (message, match) => {
   var splitted_text = match[1].split(' ')
   var auth_messages = await WhatsAsenaStack.unit_byte_msg(Config.LANG)
   if (splitted_text.length < 3) {

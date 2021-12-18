@@ -63,7 +63,7 @@ const heroku = new Heroku({
 });
 let baseURI = '/apps/' + conf.HEROKU.APP_NAME;
 
-let wk = conf.WORKTYPE == 'public' ? true : true
+let wk = conf.WORKTYPE == 'public' ? false : true
 var vtalk_dsc = ''
 var reply_eva = ''
 if (conf.LANG == 'TR') vtalk_dsc = 'Eva sesli sohbetini başlatır.', reply_eva = '*Herhangi Bir Sesli Mesaja Yanıt Verin!*'

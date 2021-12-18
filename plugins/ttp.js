@@ -11,7 +11,7 @@ const Config = require('../config');
 const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
 const cwebp = require('cwebp-bin');
-let wk = Config.WORKTYPE == 'public' ? true : true
+let wk = Config.WORKTYPE == 'public' ? false : true
 const WhatsAsenaStack = require('whatsdark-npm')
 const request = require('request');
 
