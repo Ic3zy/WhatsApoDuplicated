@@ -245,7 +245,7 @@
             "UPDATE": "*Botun Tamamen Güncel Saip*",
             "NEW_UPDATE": "*Bot için yeni güncelleme mevcut saip!*\n\nDeğişiklikler:\n```",
             "UPDATE_NOW_DESC": "Güncelleme yapar.",
-            "UPDATING": "_Güncelleme yapılıyor..._",
+            "UPDATING": "_Güncelleme yapılıyor Efendim..._",
             "INVALID_HEROKU": "*❌ Heroku bilgileriniz yanlış!*",
             "UPDATED": "*✅ Güncelleme başarılı oldu!*",          
             "UPDATED_LOCAL": "*✅ Güncelleme başarılı oldu!*",
