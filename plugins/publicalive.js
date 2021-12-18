@@ -1,0 +1,36 @@
+const Asena = require('../events');
+const {MessageType, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
+const {spawnSync} = require('child_process');
+const Config = require('../config');
+const chalk = require('chalk');
+const Axios = require('axios');
+const fs = require('fs')
+const Language = require('../language');
+const Lang = Language.getString('system_stats');
+
+
+if (Config.WORKTYPE == 'public') {
+
+    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+
+        if (Config.ALIVEMSG == 'default') {
+            await message.client.sendMessage(message.jid,'```Merhaba Efendim! \n Ben Emrinde Çalışıyorum! \n Botunuzun Versiyonu: {version} \n```', MessageType.text);
+        }
+        else {
+            var payload = Config.ALIVEMSG
+            const status = await message.client.getStatus()
+
+            if (payload.includes('{pp}')) {
+                const ppUrl = await message.client.getProfilePicture() 
+                const resim = await Axios.get(ppUrl, {responseType: 'arraybuffer'})
+                await message.client.sendMessage(message.jid, Buffer.from(resim.data), MessageType.image, { mimetype: Mimetype.png, caption: payload.replace('{version}', Config.VERSION).replace('{pp}', '').replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL)});
+            }
+            else if (payload.includes('{asenalogo}')) {
+                await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/media/gif/WhatsAsena Animated.mp4'), MessageType.video, { caption: payload.replace('{version}', Config.VERSION).replace('{pp}', '').replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL).replace('{asenalogo}', '')});
+            }
+            else {
+                await message.client.sendMessage(message.jid,payload.replace('{version}', Config.VERSION).replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL), MessageType.text);
+            }
+        }
+    }));
+}
