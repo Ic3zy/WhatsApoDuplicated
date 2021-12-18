@@ -8,24 +8,24 @@
             "COMMAND": "Komut",
             "DESC": "Açıklama",
             "EXAMPLE": "Örnek",
-            "NOT_FOUND": "*Böyle bir komut bulamadım!*",
+            "NOT_FOUND": "*Böyle bir komut bulamadım Efendim!*",
             "WARN": "Uyarı"
         },
         "_plugin": {
-            "INSTALL_DESC": "Plugin yükler.\n⌨️ Örnek: .install https://gist.github.com/phaticusthiccy/d41dd4428faf34ab8cfd4c392501c62e",
-            "NEED_URL": "Lütfen bir URL giriniz! Örnek:",
-            "INVALID_URL": "```Lütfen bir geçerli URL giriniz!```",
-            "INVALID_PLUGIN": "*❌ Plugininiz hatalı!*\n*Hata:*",
-            "INSTALLED": "*✅ Plugin başarılı bir şekilde yüklendi!*",
-            "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
-            "INSTALLED_FROM_REMOTE": "*Dışarıdan yüklediğiniz pluginler:*\n",
-            "NO_PLUGIN": "*Dışarıdan hiç plugin yüklememişsiniz!*",
-            "REMOVE_DESC": "Plugin kaldırır.",
-            "NEED_PLUGIN": "```Lütfen bir Plugin giriniz! Örnek: .plugin test```",
-            "NOT_FOUND_PLUGIN": "```Böyle bir plugin belki yüklediniz, belki de yüklemediniz. Ama şu an olmadığı kesin.```",
-            "DELETED": "*✅ Modül başarıyla silindi!*",
-            "UNOFF": "⚠️ *Dikkat!* \n*Yüklendiğiniz plugin resmi değildir!*",
-            "WARN": "Pluginleri sadece t.me/remasterplugin kanalından alın."
+            "INSTALL_DESC": "Dışardan Plugin Yüklemeniz İçindir Efendim",
+            "NEED_URL": "Lütfen bir URL Gir Saip!:",
+            "INVALID_URL": "```Lütfen bir geçerli URL Girin Efendim!```",
+            "INVALID_PLUGIN": "*❌ Plugininiz hatalı Saip Lütfen Kodları Kontrol Et!*\n*Hata:*",
+            "INSTALLED": "*✅ Plugini Başarı İle Yüklediniz Efendim*",
+            "PLUGIN_DESC": "Yüklediğin pluginleri gösterir Efendim.",
+            "INSTALLED_FROM_REMOTE": "*Dışarıdan yüklediğin pluginler:*\n",
+            "NO_PLUGIN": "*Dışarıdan hiç plugin yüklenmemiş Saip*",
+            "REMOVE_DESC": "Yüklü Plugin kaldırır Efendim.",
+            "NEED_PLUGIN": "```Lütfen bir Plugin Girin Efendim```",
+            "NOT_FOUND_PLUGIN": "```Böyle bir plugin belki yüklediniz, belki de yüklemediniz. Ama şu an Bulunamıyor Efendim.```",
+            "DELETED": "*✅ Plugini Başarı İle Sildiniz Efendim!*",
+            "UNOFF": "⚠️ *Dikkat saip* \n*İnternal Bir Plugin Yüklemiyorsun Lütfen Dikkat Et Riskli Olabilir!*",
+            "WARN": "Pluginleri sadece remaster kanalından alın."
         },
         "admin": {
             "BAN_DESC": "Gruptan kişi banlar. Yanıt verin ya da komutun yanına kişiyi etiketleyin.",
@@ -52,9 +52,9 @@
             "L_WARN": "Kullanmadan önce konumunuzu açın!"
         },
         "afk": {
-            "AFK_DESC": "Sizi AFK yapar.",
-            "IM_AFK": "*Artık AFK'yım!*",
-            "IM_AFK_NOMD": "Artık AFK'yım!",
+            "AFK_DESC": "Seni AFK yapar saip.",
+            "IM_AFK": "*Artık AFK'yım saip!*",
+            "IM_AFK_NOMD": "Artık AFK'yım saip!",
             "REASON": "Sebep",
             "LAST_SEEN": "Son Görülme",
             "IM_NOT_AFK": "```Artık AFK Değilim!```",
@@ -75,16 +75,16 @@
             "MUST_TEXT": "```Lütfen herhangi bir mesajı yanıtlayın```"
         },
         "heroku": {
-            "RESTART_DESC": "WhatsAsena'yı yeniden başlatın",
+            "RESTART_DESC": "WhatsApo'yu yeniden başlatın",
             "RESTART_MSG": "```Yeniden Başlatılıyor...```",
-            "SHUTDOWN_DESC": "WhatsAsena'yı kapatır.",
+            "SHUTDOWN_DESC": "WhatsApo'yu kapatır.",
             "SHUTDOWN_MSG": "*Belki birgün tekrar görüşebiliriz..\nHoşcakal Sahip..*\n```Asena Kapatılıyor... ⛔```",
             "DYNO_DESC": "Heroku dyno kullanımını kontrol edin",
             "DYNO_TOTAL": "```Toplam Kota```",
             "DYNO_USED": "```Kullanılan kota```",
             "PERCENTAGE": "```Yüzde```",
             "DYNO_LEFT": "```Kalan```",
-            "SETVAR_DESC": "Heroku'da kısa yolla config var ayarlar.\n⌨️ Örnek: .setvar SUDO:true",
+            "SETVAR_DESC": "Heroku'da kısa yolla config var ayarlar.",
             "SET_SUCCESS": "Başarıyla ayarlandı ```{} ➜ {}```",
             "KEY_VAL_MISSING": "```Key veya Value eksik yazdınız.```",
             "INVALID": "```Geçersiz key: value biçimi```",
@@ -101,11 +101,11 @@
         },
         "filters": {
             "FILTER_DESC": "Filtre ekler. Yazdığınız filtreyi birisi yazarsa yazdığınıı cevabı gönderir. Eğer sadece filter yazarsanız eklediğiniz filtreleri getirir.\n⌨️ Örnek: .filter ”merhaba” ”merhaba#nasılsın?”",
-            "NO_FILTER": "*❌ Bu sohbette hiç filter yok!*",
-            "FILTERS": "*🔎 Bu sohbetdeki filtreleriniz:*",
+            "NO_FILTER": "*❌ Bu sohbette hiç filter yok saip!*",
+            "FILTERS": "*🔎 Bu sohbetdeki filterin Saip:*",
             "NEED_REPLY": "*❌ Lütfen cevap yazın!*\n*Örnek:*",
             "FILTERED": "*✅ Başarılı bir şekilde* ```{}``` *filtresi ayarlandı!*",
-            "STOP_DESC": "Ekledğiniz filtreyi durdurur.\n⌨️ Örnek: .stop ”merhaba”",
+            "STOP_DESC": "Ekledğiniz filtreyi durdurur.",
             "NEED_FILTER": "*❌ Lütfen bir filtre yazın!*\n*Örnek:*",
             "ALREADY_NO_FILTER": "*❌ Zaten böyle bir filtre yok!*",
             "DELETED": "*✅ Filtreniz başarılı bir şekilde silindi!*"
@@ -210,9 +210,9 @@
         },
         "tagall": {
             "TAGALL_DESC": "Gruptaki herkesi etiketler. Hidetag atmak için mesajı yanıtlayın yada kelime girin.",
-            "ADMİN": "*Bu Grupta Admin Değilim!*",
-            "SCAN": "Girilen numaranın WhatApp'ta kayıtlı olup olmadığını kontrol eder.",
-            "NO": "*Lütfen Herhangi Bir Telefon Numarası Gir!*\n*Örnek:* ```.scan 90xxxx```",
+            "ADMİN": "*Sahip Üzgünüm, Bu grupta Admin Deilim :(*",
+            "SCAN": "Girilen numaranın WhatApp'ta kayıtlı olup olmadığını kontrol eder saip.",
+            "NO": "*Lütfen Herhangi Bir Telefon Numarası Gir saip!*",
             "SUC": "*Numaralı Kişi WhatApp Kullanıyor! ✅*",
             "UNSUC": "*Numaralı Kişi WhatApp Kullanmıyor! ❌*",
             "TAGADMİN": "Grup adminlerini etiketler.",
@@ -232,7 +232,7 @@
         },
         "log": {
             "LOG": "Yanıtladığınız mesajı özel numaranıza kaydeder",
-            "REPLY": "*Lütfen Herhangi Bir Mesajı Yanıtlayın!*",
+            "REPLY": "*Lütfen Herhangi Bir Mesajı Yanıtla saip!*",
             "ANIM": "Hareketli stickerleri desteklemez!",
             "HEAD": "```===== [LOGGED MESSAGE] =====```\n\n",
             "USER": " Numaralı Kullanıcıdan \n",
@@ -242,8 +242,8 @@
         },
         "updater": {
             "UPDATER_DESC": "Güncelleme denetler.",
-            "UPDATE": "*Botunuz tamamen güncel!*",
-            "NEW_UPDATE": "*Bot için yeni güncelleme mevcut!*\n\nDeğişiklikler:\n```",
+            "UPDATE": "*Botun Tamamen Güncel Saip*",
+            "NEW_UPDATE": "*Bot için yeni güncelleme mevcut saip!*\n\nDeğişiklikler:\n```",
             "UPDATE_NOW_DESC": "Güncelleme yapar.",
             "UPDATING": "_Güncelleme yapılıyor..._",
             "INVALID_HEROKU": "*❌ Heroku bilgileriniz yanlış!*",
@@ -253,15 +253,15 @@
             "IN_AF": "*Lütfen* ```HEROKU_APP_NAME``` *ile* ```app name```'nizin *aynı olduğuna emin olun.*\n*Bu iki değer aynı ise lütfen* ```HEROKU_API_KEY```'inizi *değiştirin!*\n\n_Bu ayarlara ulaşmak için Heroku >> Uygulama >> Settings >> Reavel Config Vars adımlarını takip edin._\n_API keyinizi yenilemek için Heroku >> Account >> API Key kısmından yeniledikten sonra eski API key ile değiştirin._"
         },
         "weather": {
-            "WEATHER_DESC": "Hava durumu getirir.\n⌨️ Örnek: .weather bakü",
-            "NEED_LOCATION": "*Lütfen bir konum yazın!*\n*Örnek:* ```.weather Bakü```",
+            "WEATHER_DESC": "Hava durumu getirir Efendim.",
+            "NEED_LOCATION": "*Lütfen bir konum yazın!*",
             "LOCATION": "Konum",
             "TEMP": "Sıcaklık",
             "DESC": "Açıklama",
             "HUMI": "Nem",
             "WIND": "Rüzgar Hızı",
             "CLOUD": "Bulut",
-            "NOT_FOUND": "```Böyle bir şehir bulamadım. 😖```"
+            "NOT_FOUND": "```Böyle bir şehir bulamadım saip. 😖```"
         },
         "web": {
             "SPEEDTEST_DESC": "İndirme ve Yükleme hızını ölçer.",
@@ -270,8 +270,8 @@
             "UPLOAD": "Yükleme",
             "DOWNLOAD": "İndirme",
             "CALC": "Basit matematik işlemleri yapar.",
-            "SUC": "*Hesaplama Yapıldı ✅*\n*Sonuç:* ",
-            "UNSUC": "*Hesaplama Yapılamadı ❌*\n*Hata:* \n",
+            "SUC": "*Hesaplama Yapıldı Efendim ✅*\n*Sonuç:* ",
+            "UNSUC": "*Hesaplama Yapılamadı saip ❌*\n*Hata:* \n",
             "VALİD": "*Lütfen Geçerli Olan Şekilde Kullanın!* \n*.calc 1 + 2*\n*.calc 3 x 5*\n*.calc 10 / 5*\n*.calc 5 - 2*",
             "PING_DESC": "Pinginizi ölçer.",
             "URL": "Uzun linki kısaltır."
@@ -321,7 +321,7 @@
             "YİRMİSEKİZMUTE": "*Grup 28 dakika süreyle susturuldu!*",
             "YİRMİDOKUZMUTE": "*Grup 29 dakika süreyle susturuldu!*",
             "OTUZMUTE": "*Grup 30 dakika süreyle susturuldu!*",
-            "OTUZBİRMUTE": "*Grup 31 dakika süreyle susturuldu!*",
+            "OTUZBİRMUTE": "*Grup 31 dakika süreyle susturuldu! QWPOEKPQWİKEQPOWĞKEİ*",
             "OTUZİKİMUTE": "*Grup 32 dakika süreyle susturuldu!*",
             "OTUZÜÇMUTE": "*Grup 33 dakika süreyle susturuldu!*",
             "OTUZDÖRTMUTE": "*Grup 34 dakika süreyle susturuldu!*",
@@ -342,7 +342,7 @@
             "KIRKDOKUZMUTE": "*Grup 49 dakika süreyle susturuldu!*",
             "ELLİMUTE": "*Grup 50 dakika süreyle susturuldu!*",
             "ELLİBİRMUTE": "*Grup 51 dakika süreyle susturuldu!*",
-            "ELLİİKİMUTE": "*Grup 52 dakika süreyle susturuldu!*",
+            "ELLİİKİMUTE": "*Grup 52 dakika süreyle susturuldu! WOQPKEPİOQQWĞE*",
             "ELLİÜÇMUTE": "*Grup 53 dakika süreyle susturuldu!*",
             "ELLİDÖRTMUTE": "*Grup 54 dakika süreyle susturuldu!*",
             "ELLİBEŞMUTE": "*Grup 55 dakika süreyle susturuldu!*",
@@ -375,14 +375,14 @@
             "UV_PROC": "```Sesli Mesaja Çevriliyor..```"
         },
         "ffmpeg": {
-            "FF_DESC": "Videoya istenilen ffmpeg filtresini uygular.\n⌨️ Örnek: .ffmpeg fade=in:0:30",
+            "FF_DESC": "Videoya istenilen ffmpeg filtresini uygular Saip",
             "FF_PROC": "Efekt Uygulanıyor.."
         },
         "spammer": {
-            "SPAM_DESC": "Siz durdurana kadar spam yapar.\n⌨️ Örnek: .spam test",
-            "NEED_WORD": "*Kelime Girmelisin!*",
+            "SPAM_DESC": "Sen durdurana kadar spam yapar.",
+            "NEED_WORD": "*Kelime Gir Saip!*",
             "STOP_SPAMDESC": "Spam komutunu durdurur.",
-            "STOP_SPAM": "✅ *Spam Başarıyla Durduruldu! Lütfen biraz bekleyin.*",
+            "STOP_SPAM": "✅ *Spam Başarıyla Durduruldu Sahip! Lütfen biraz bekleyin.*",
             "ST_DESC": "Yanıtlanan fotoğrafı veya videoyu stickera dönüştürüp spam olarak gönderir.",
             "ST_ST": "```Lütfen Stcikere Yanıt Vermeyin!```\n```Sadece Video yada Fotoğrafa Yanıt Verin!```",
             "ST_NEED": "```Herhangi Bir Videoya veya Fotoğrafa Yanıt Vermelisin!```",
@@ -418,7 +418,7 @@
             "GLOW_DESC": "Yazıyı neon resme dönüştürür."
         },
         "wallpaper": {
-            "WP": "Birbirinden farklı, yüksek çözünürlüklü duvar kağıdı gönderir."
+            "WP": "Birbirinden farklı, yüksek çözünürlüklü duvar kağıdı gönderir Efendim."
         },
         "webss": {
             "SS_DESC": "Verilen linkteki sayfadan ekran görüntüsü alır.",
@@ -428,7 +428,7 @@
             "NEED_REPLY": "```Lütfen bir kullanıcının mesajına yanıt verin!```",
             "ONLY_AUDIO":"```Sadece ses dosyaları desteklenir.```",
             "USAGE": "Sesteki cümleleri yazıya çevirir.",
-            "TEXT": "*Hey! Seste bunları duydum!:*\n\n"
+            "TEXT": "*Hey! Seste bunu Duydum Sahip:*\n\n"
         },
         "aiscanner": {
             "NOT_FOUND": "Aradığınız komuta benzer başka bir komut bulamadık..",
@@ -510,7 +510,7 @@
             "ARAT": "Aratılan Şarkı:"
         },
         "covid": {
-            "COV_DESC": "15'den fazla ülkenin günlük ve genel covid tablosunu gösterir.",
+            "COV_DESC": "15'den fazla ülkenin günlük ve genel covid tablosunu gösterir Efendim.",
             "NOT": "```Üzgünüm Böyle Bir Ülke Bulamadım! Lütfen Geçerli Olan Ülke Kodlarını Girin!```\n\n```Ülke Kodları:``` *.covid tr || az || usa || in || cn || nl || pk || ru || de || uk || gr || fr || jp || kz || id*"
         }
     }
