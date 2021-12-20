@@ -1,6 +1,5 @@
 const Asena = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
-const config = require('./config');
 const fs = require('fs');
 const Config = require('../config')
 const axios = require('axios')
