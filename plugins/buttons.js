@@ -12,7 +12,7 @@ var ddd = ggg.toString('utf-8')
 
 if (config.WORKTYPE = 'private') {
 
-Asena.addCommand({pattern: 'aliymod', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'aliymod', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 // send a list message!
     const rows = [
         {title: '💌asena ', description: "_*Düzeltilecek.*_ ", rowId:" rowid1"},
