@@ -1,15 +1,15 @@
 /* Copyright (C) 2020 Yusuf Usta.
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
 WhatsAsena - Yusuf Usta
 */
 
 const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType, Mimetype, GroupSettingChange, MessageOptions } = require('@adiwajshing/baileys');
 const Config = require('../config');
-
+const exec = require('child_process').exec;
+const ffmpeg = require('fluent-ffmpeg')
+const translatte = require('translatte');
 const fs = require('fs');
 const Language = require('../language');
 const Lang = Language.getString('profile');
@@ -24,7 +24,6 @@ Asena.addCommand({pattern: 'kickme$', fromMe: true, desc: Lang.KICKME_DESC, only
         await message.client.groupLeave(message.jid);
     }
 }));
-
 Asena.addCommand({pattern: 'pp$', fromMe: true, desc: Lang.PP_DESC}, (async (message, match) => {    
     if (!message.reply_message || !message.reply_message.image) return await message.client.sendMessage(message.jid,Lang.NEED_PHOTO, MessageType.text);
     
@@ -164,4 +163,3 @@ else if (Config.WORKTYPE == 'public') {
         }
     }));
 }
-
