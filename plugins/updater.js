@@ -20,7 +20,7 @@ const Language = require('../language');
 const Lang = Language.getString('updater');
 
 
-Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'güncelleme', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
     await WhatsAsenaStack.startwhatsasena()
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
@@ -44,16 +44,8 @@ Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (a
     }
 }));
 var Action = ''
-if (Config.LANG == 'TR') Action = '*WhatsAsena Halihazırda Güncelleniyor!*'
-if (Config.LANG == 'AZ') Action = '*WhatsAsena Hal -hazırda Yenilənir!*'
-if (Config.LANG == 'EN') Action = '*WhatsAsena Currently Updating!*'
-if (Config.LANG == 'RU') Action = '*WhatsAsena сейчас обновляется!*'
-if (Config.LANG == 'ES') Action = '*WhatsAsena Actualizando actualmente!*'
-if (Config.LANG == 'PT') Action = '*O WhatsAsena está sendo atualizado no momento!*'
-if (Config.LANG == 'ML') Action = '*WhatsAsena നിലവിൽ അപ്ഡേറ്റ് ചെയ്യുന്നു!*'
-if (Config.LANG == 'HI') Action = '*WhatsAsena वर्तमान में अपडेट हो रहा है!*'
-if (Config.LANG == 'ID') Action = '*WhatsAsena Saat Ini Memperbarui!*'
-Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
+if (Config.LANG == 'TR' || Config.LANG == 'AZ') Action = '*Efendim Bot Zaten Güncelleniyor*'
+Asena.addCommand({pattern: 'güncelleme yap', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
     await WhatsAsenaStack.startwhatsasena()
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
