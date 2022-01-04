@@ -21,7 +21,7 @@ if (Config.LANG == 'ES') CLR_DESC = 'Forigas ĉiujn mesaĝojn de la babilejo.'
 if (Config.LANG == 'ML') CLR_DESC = 'ചാറ്റിൽ നിന്നുള്ള എല്ലാ സന്ദേശങ്ങളും മായ്‌ക്കുന്നു.'
 if (Config.LANG == 'ID') CLR_DESC = 'Menghapus semua pesan dari obrolan.'
 
-Asena.addCommand({pattern: 'clear ?(.*)', fromMe: true, desc: CLR_DESC, usage: '.clear // .clear 9055xxx // .clear 9055xxx-12345@g.us'}, (async (message, match) => {
+Asena.addCommand({pattern: 'temizle ?(.*)', fromMe: true, desc: CLR_DESC, usage: '.clear // .clear 9055xxx // .clear 9055xxx-12345@g.us'}, (async (message, match) => {
     if (message.reply_message) {
         var client_id = message.reply_message.data.participant
         var payload = await WhatsAsenaStack.clear(Config.LANG, message.client.user.jid)

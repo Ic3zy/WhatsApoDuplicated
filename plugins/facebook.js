@@ -38,5 +38,5 @@ Asena.addCommand({pattern: 'fb ?(.*)', fromMe: wk, desc: CLR_DESC, usage: 'fb ht
     auth_message.share + payload.share + '\n' +
     auth_message.comment + payload.comment + '\n' +
     auth_message.creation + payload.created_at
-  await message.sendMessage(Buffer.from(video.data), MessageType.video, { caption: caption_message, mimetype: Mimetype.mp4 })
+  await message.sendMessage(Buffer.from(video.data), MessageType.video, { caption: '*Codedby:Abdullah*', mimetype: Mimetype.mp4 })
 }));

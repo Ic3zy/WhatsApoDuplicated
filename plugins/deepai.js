@@ -37,7 +37,7 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'faceai$', fromMe: true, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
         var image_an = await WhatsAsenaStack.face()
         var webimage = await axios.get(image_an, {responseType: 'arraybuffer'})
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
     }));
     Asena.addCommand({pattern: 'animai', fromMe: true, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
         var anim_img = await WhatsAsenaStack.anime()
@@ -45,7 +45,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
             MessageType.image, 
-            { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'}
+            { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'}
         )
     }));
     Asena.addCommand({pattern: 'colorai$', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
@@ -66,7 +66,7 @@ if (Config.WORKTYPE == 'private') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -88,7 +88,7 @@ if (Config.WORKTYPE == 'private') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -110,7 +110,7 @@ if (Config.WORKTYPE == 'private') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -141,7 +141,7 @@ if (Config.WORKTYPE == 'private') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -174,7 +174,7 @@ if (Config.WORKTYPE == 'private') {
             text: msg_tt,
         });
         var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
     }));
     Asena.addCommand({pattern: 'toonai$', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {   
         if (!Config.DEEPAI) return await message.sendMessage(noAPI);
@@ -194,7 +194,7 @@ if (Config.WORKTYPE == 'private') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -247,7 +247,7 @@ if (Config.WORKTYPE == 'private') {
                     content: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -263,7 +263,7 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'faceai$', fromMe: false, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
         var image_an = await WhatsAsenaStack.face()
         var webimage = await axios.get(image_an, {responseType: 'arraybuffer'})
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
     }));
     Asena.addCommand({pattern: 'animai', fromMe: false, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
         var anim_img = await WhatsAsenaStack.anime()
@@ -271,7 +271,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
             MessageType.image, 
-            { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'}
+            { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'}
         )
     }));
     Asena.addCommand({pattern: 'colorai$', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => { 
@@ -292,7 +292,7 @@ else if (Config.WORKTYPE == 'public') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -314,7 +314,7 @@ else if (Config.WORKTYPE == 'public') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -336,7 +336,7 @@ else if (Config.WORKTYPE == 'public') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*a'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -367,7 +367,7 @@ else if (Config.WORKTYPE == 'public') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -400,7 +400,7 @@ else if (Config.WORKTYPE == 'public') {
             text: msg_tt,
         });
         var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
     }));
     Asena.addCommand({pattern: 'toonai$', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {   
         if (!Config.DEEPAI) return await message.sendMessage(noAPI);
@@ -420,7 +420,7 @@ else if (Config.WORKTYPE == 'public') {
                     image: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -473,7 +473,7 @@ else if (Config.WORKTYPE == 'public') {
                     content: fs.createReadStream("./output.png"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));

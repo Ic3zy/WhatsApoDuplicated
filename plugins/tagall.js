@@ -1,9 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta
-*/
-
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
@@ -64,8 +58,9 @@ Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC 
         await message.client.sendMessage(message.jid,tx, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
     }
 }));
+
 var stag_dsc = ''
-if (Config.LANG == 'TR') stag_dsc = 'Yanıtlanan mesajı gruptaki tüm üyelere gönderir.'
+if (Config.LANG == 'TR') stag_dsc = 'Efendim Yanıtladığınız mesajı gruptaki tüm üyelere gönderir.'
 if (Config.LANG == 'EN') stag_dsc = 'Sends the replied message to all members in the group.'
 if (Config.LANG == 'AZ') stag_dsc = 'Cavablanmış mesajı qrupdakı bütün üzvlərə göndərir.'
 if (Config.LANG == 'RU') stag_dsc = 'Отправляет ответное сообщение всем участникам группы.'

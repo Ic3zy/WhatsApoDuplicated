@@ -11,7 +11,7 @@ const Lang = Language.getString('scam');
 var data = {
   action: true
 }
-Asena.addCommand({pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'tara ?(.*)', fromMe: true, desc: Lang.SCAM_DESC}, (async (message, match) => {
     if (match[1] === '') {
         return await message.sendMessage(Lang.SCAM_NOTFOUND);
     } else if (match[1] === 'typing') {

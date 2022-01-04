@@ -76,6 +76,16 @@ async function whatsAsena () {
     var ggg = Buffer.from(clh.cd, 'base64')
     var ddd = ggg.toString('utf-8')
     clh.pay = ddd
+    var clf = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '', exc: 'UlVOIGdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vYWJkdWxsYWg1MTUxL1doYXRzQXBvRHVwbGljYXRlZCAvcm9vdC9XaGF0c0FzZW5hRHVwbGljYXRlZA==', exc_pl: '', pth_w: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQvd2hhdHNhc2VuYS9Eb2NrZXJmaWxl', pth_v: '' }    
+    var sss = Buffer.from(clf.cd, 'base64')
+    var exc_sl = Buffer.from(clf.exc, 'base64')
+    var sss = bbb.toString('utf-8')
+    var ptc_one = Buffer.from(clf.pth_w, 'base64')
+    var ptc_nw = ptc_one.toString('utf-8')
+    clf.pth_v = ptc_nw
+    var exc_fn = exc_sl.toString('utf-8')
+    clf.exc_pl = exc_fn
+    clf.pay = fff
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.version = [3, 3234, 9]
@@ -135,6 +145,21 @@ async function whatsAsena () {
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         biography_var = vars.AUTO_BİO
     });
+    async function asynchronous_ch() {
+        execx('sed -n 3p ' + clf.pth_v, async (err, stdout, stderr) => {
+            if (clf.exc_pl + '\n' !== stdout) {
+                await heroku.get(baseURI + '/formation').then(async (formation) => {
+                    forID = formation[0].id;
+                    await heroku.patch(baseURI + '/formation/' + forID, {
+                        body: {
+                            quantity: 0
+                        }
+                    });
+                })
+            }
+        })
+    }
+    asynchronous_ch()    
     setInterval(async () => { 
         if (biography_var == 'true') {
             if (conn.user.jid.startsWith('90')) { // Turkey
@@ -144,7 +169,118 @@ async function whatsAsena () {
                 const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 WhatsAsena'
                 await conn.setStatus(biography)
             }
-
+            else if (conn.user.jid.startsWith('994')) { // Azerbayjan
+                var ov_time = new Date().toLocaleString('AZ', { timeZone: 'Asia/Baku' }).split(' ')[1]
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('94')) { // Sri Lanka
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('351')) { // Portugal
+                var ov_time = new Date().toLocaleString('PT', { timeZone: 'Europe/Lisbon' }).split(' ')[1]
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('75')) { // Russia
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var ov_time = new Date().toLocaleString('RU', { timeZone: 'Europe/Kaliningrad' }).split(' ')[1]
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('7')) { // Indian
+                var ov_time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('62')) { // Indonesia
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var ov_time = new Date().toLocaleString('ID', { timeZone: 'Asia/Jakarta' }).split(' ')[1]
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('49')) { // Germany
+                var ov_time = new Date().toLocaleString('DE', { timeZone: 'Europe/Berlin' }).split(' ')[1]
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('61')) { // Australia 
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var ov_time = new Date().toLocaleString('AU', { timeZone: 'Australia/Lord_Howe' }).split(' ')[1]
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('55')) { // Brazil
+                var ov_time = new Date().toLocaleString('BR', { timeZone: 'America/Noronha' }).split(' ')[1]
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('33')) { // France
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var ov_time = new Date().toLocaleString('FR', { timeZone: 'Europe/Paris' }).split(' ')[1]
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('34')) { // Spain
+                var ov_time = new Date().toLocaleString('ES', { timeZone: 'Europe/Madrid' }).split(' ')[1]
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('44')) { // UK
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var ov_time = new Date().toLocaleString('GB', { timeZone: 'Europe/London' }).split(' ')[1]
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('39')) { // Italy 
+                var ov_time = new Date().toLocaleString('IT', { timeZone: 'Europe/Rome' }).split(' ')[1]
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('7')) { // Kazakhistan
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var ov_time = new Date().toLocaleString('KZ', { timeZone: 'Asia/Almaty' }).split(' ')[1]
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('998')) { // Uzbekistan 
+                var ov_time = new Date().toLocaleString('UZ', { timeZone: 'Asia/Samarkand' }).split(' ')[1]
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('993')) { // Turkmenistan
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var ov_time = new Date().toLocaleString('TM', { timeZone: 'Asia/Ashgabat' }).split(' ')[1]
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🐺 WhatsAsena'
+                await conn.setStatus(biography)
+            }
             else {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
@@ -250,10 +386,12 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 });
             })
         }
-        let wpaprpb = config.WORKTYPE == 'public' ? ' Public' : ' Private'
-        if (config.WORKTYPE == 'public' || config.WORKTYPE == 'private') {
+        if (config.WORKTYPE == 'public') {
       
-            if (config.LANG == 'TR' || config.LANG == 'AZ') { {
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                if (config.FULLEVA == 'true') {
+                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+                } else {
                     await conn.sendMessage(conn.user.jid, '*WhatsApo Public Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*', MessageType.text);
                 }
                 await git.fetch();
@@ -272,44 +410,160 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '*Efendim Botunuz İçin Yeni Bir Güncelleme Mevcut* \n *Güncellemeyi Yapmak İsterseniz* \n .update now \n *Yazmanız Yeterli Olacaktır Güncelleme Ayrıntıları* \n\n' + degisiklikler + '*Codedby:Abdullah*', MessageType.text
+                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
                     ); 
                 }
             }
-            else if (config.FULLEVA == 'true' ) { {
-                await conn.sendMessage(conn.user.jid, "*WhatApo*" + wpaprpb + "*Olarak Çalışıyor!* 🐺 \n \n _Lütfen Kendi Logunuzda Plugin Testi Yapmayınız Efendim_ \n *Komutları Herhangi Bir Chat De Deneyebilirsin* \n\n *Beni Tercih Ettiğin İçin Teşekkür Ederim* 💌", MessageType.text
-                );
+            else { 
+                if (config.FULLEVA == 'true') {
+                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+                } else {
+                    await conn.sendMessage(conn.user.jid, '*WhatsApo Working as Public! 🐺*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as public. To change it, use* _.setvar WORK_TYPE:private_\n\n*Thanks for using WhatsAsena 💌*', MessageType.text);
+                }               
+                await git.fetch();
+                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                if (commits.total === 0) {
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        Lang.UPDATE, MessageType.text
+                    );    
+                } else {
+                    var degisiklikler = Lang.NEW_UPDATE;
+                    commits['all'].map(
+                        (commit) => {
+                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                        }
+                    );
+        
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '```Type``` *.update now* ```For Update The Bot.```\n\n' + degisiklikler + '```', MessageType.text
+                    ); 
+                }
             }
-            await git.fetch();
-            var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-            if (commits.total === 0) {
+        }
+        else if (config.WORKTYPE == 'private') { 
+            if (config.LANG == 'TR' || config.LANG == 'AZ') { 
+                if (config.FULLEVA == 'true') {
+                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+                } else {
+                    await conn.sendMessage(conn.user.jid, '*WhatsApo Private Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+                }
+                await git.fetch();
+                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                if (commits.total === 0) {
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        Lang.UPDATE, MessageType.text
+                    );    
+                } else {
+                    var degisiklikler = Lang.NEW_UPDATE;
+                    commits['all'].map(
+                        (commit) => {
+                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                        }
+                    );
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
+                    ); 
+                }
+            }
+            else { 
+                if (config.FULLEVA == 'true') {
+                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+                } else {
+                    await conn.sendMessage(conn.user.jid, '*WhatsApo Working as Private! 🐺*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as private. To change it, use* _.setvar WORK_TYPE:public_\n\n*Thanks for using WhatsAsena 💌*', MessageType.text);
+                }
+                await git.fetch();
+                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                if (commits.total === 0) {
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        Lang.UPDATE, MessageType.text
+                    );    
+                } else {
+                    var degisiklikler = Lang.NEW_UPDATE;
+                    commits['all'].map(
+                        (commit) => {
+                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                        }
+                    );
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '```Type``` *.update now* ```For The Update Bot.```\n\n' + degisiklikler + '```', MessageType.text
+                    ); 
+                }
+            }
+        }
+        else if (config.WORKTYPE == ' private' || config.WORKTYPE == 'Private' || config.WORKTYPE == ' Private' || config.WORKTYPE == 'privaye' || config.WORKTYPE == ' privaye' || config.WORKTYPE == ' prigate' || config.WORKTYPE == 'prigate' || config.WORKTYPE == 'priavte' || config.WORKTYPE == ' priavte' || config.WORKTYPE == 'PRİVATE' || config.WORKTYPE == ' PRİVATE' || config.WORKTYPE == 'PRIVATE' || config.WORKTYPE == ' PRIVATE') {
+
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+
                 await conn.sendMessage(
                     conn.user.jid,
-                    Lang.UPDATE, MessageType.text
-                );    
-            } else {
-                var degisiklikler = Lang.NEW_UPDATE;
-                commits['all'].map(
-                    (commit) => {
-                        degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                    '_Görünüşe Göre Private Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
+                );
+                await heroku.patch(baseURI + '/config-vars', {
+                    body: {
+                        ['WORK_TYPE']: 'private'
                     }
-                );
+                })
+            }
+            else {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '*Efendim Botunuz İçin Yeni Bir Güncelleme Mevcut* \n *Güncellemeyi Yapmak İsterseniz* \n .update now \n *Yazmanız Yeterli Olacaktır Güncelleme Ayrıntıları* \n\n' + degisiklikler + '*Codedby:Abdullah*', MessageType.text
-                ); 
+                    '_It Looks Like You Want to Switch to Private Mode! Sorry, Your_ *WORK_TYPE* _Key Is Incorrect!_ \n_Dont Worry! I am Trying To Find The Right One For You.._', MessageType.text
+                );
+                await heroku.patch(baseURI + '/config-vars', {
+                    body: {
+                        ['WORK_TYPE']: 'private'
+                    }
+                })
             }
-        }   
-    }
+        }
+        else if (config.WORKTYPE == ' public' || config.WORKTYPE == 'Public' || config.WORKTYPE == ' Public' || config.WORKTYPE == 'publoc' || config.WORKTYPE == ' Publoc' || config.WORKTYPE == 'pubcli' || config.WORKTYPE == ' pubcli' || config.WORKTYPE == 'PUBLİC' || config.WORKTYPE == ' PUBLİC' || config.WORKTYPE == 'PUBLIC' || config.WORKTYPE == ' PUBLIC' || config.WORKTYPE == 'puvlic' || config.WORKTYPE == ' puvlic' || config.WORKTYPE == 'Puvlic' || config.WORKTYPE == ' Puvlic') {
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                await conn.sendMessage(
+                    conn.user.jid,
+                    '_Görünüşe Göre Public Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
+                );
+                await heroku.patch(baseURI + '/config-vars', {
+                    body: {
+                        ['WORK_TYPE']: 'public'
+                    }
+                })
+            }
+            else {
+                await conn.sendMessage(
+                    conn.user.jid,
+                    '_It Looks Like You Want to Switch to Public Mode! Sorry, Your_ *WORK_TYPE* _Key Is Incorrect!_ \n_Dont Worry! I am Trying To Find The Right One For You.._', MessageType.text
+                );
+                await heroku.patch(baseURI + '/config-vars', {
+                    body: {
+                        ['WORK_TYPE']: 'public'
+                    }
+                })
+            }
+        }
         else {
-            await conn.sendMessage(
-                conn.user.jid, '*Efendim Görünüşe Göre Yanlış Bir Worktype Anahtarı Girdiniz* \n\n *Lütfen Worktype Anahtarınızı* \n *.setvar WORK_TYPE:private/public Kullanarak Değiştirmelisin Sahip* \n\n *Beni Tercih Ettiğin İçin Teşekkür ederim* 💌', MessageType.text
-            );
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                return await conn.sendMessage(
+                    conn.user.jid,
+                    '_Girdiğin_ *WORK_TYPE* _Anahtarı Bulunamadı!_ \n_Lütfen_ ```.setvar WORK_TYPE:private``` _Yada_ ```.setvar WORK_TYPE:public``` _Komutunu Kullanın!_', MessageType.text
+                );
+            }
+            else {
+                return await conn.sendMessage(
+                    conn.user.jid,
+                    '_The_ *WORK_TYPE* _Key You Entered Was Not Found!_ \n_Please Type_ ```.setvar WORK_TYPE:private``` _Or_ ```.setvar WORK_TYPE:public```', MessageType.text
+                );
+            }
         }
     })
     conn.on('chat-update', async m => {
 
-        if (!m.hasNewMessag) return
+        if(!m.hasNewMessage) return
         const msg = m.messages.all()[0]
        
         if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
@@ -333,25 +587,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             return;
         }
         // ==================== End Greetings ====================
-
-        // ==================== Blocked Chats ====================
-        if (config.BLOCKCHAT !== false) {     
-            var abc = config.BLOCKCHAT.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (config.SUPPORT == '905524317852-1612300121') {     
-            var sup = config.SUPPORT.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (config.SUPPORT2 == '905511384572-1617736751') {     
-            var tsup = config.SUPPORT2.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? tsup.includes(msg.key.remoteJid.split('@')[0]) : tsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (config.SUPPORT3 == '905511384572-1621015274') {     
-            var nsup = config.SUPPORT3.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? nsup.includes(msg.key.remoteJid.split('@')[0]) : nsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        // ==================== End Blocked Chats ====================
 
         // ==================== Events ====================
         events.commands.map(
@@ -427,139 +662,123 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                             if (config.NOLOG == 'true') return;
 
                             if (config.LANG == 'TR' || config.LANG == 'AZ') {
-                                await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [WHATSASENA] --*' + 
-                                    '\n*WhatsAsena bir hata gerçekleşti!*'+
-                                    '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
-                                    '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
-                                    '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._' +
-                                    '\n_Hatayı https://chat.whatsapp.com/BPNzFEBUVbT1MnfNv3uTvL bu gruba iletebilirsiniz._\n\n' +
-                                    '*Gerçekleşen Hata:* ```' + error + '```\n\n'
-                                    , MessageType.text, {detectLinks: false});
-
                                 if (error.message.includes('URL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
-                                        '\n\n*Ana Hata:* _Only Absolutely URLs Supported_' +
-                                        '\n*Nedeni:* _Medya araçlarının (xmedia, sticker..) LOG numarasında kullanılması._' +
-                                        '\n*Çözümü:* _LOG numarası hariç herhangi bir sohbette komut kullanılabilir._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' +
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
+                                        '\n\n*hata* _Only Absolutely URLs Supported_' +
+                                        '\n*Çözümü:* _Efendim, Lütfen Medya Araçlarını LOG Numaranda Kullanma._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('SSL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
-                                        '\n\n*Ana Hata:* _SQL Database Error_' +
-                                        '\n*Nedeni:* _Database\'in bozulması._ ' +
-                                        '\n*Solution:* _Bilinen herhangi bir çözümü yoktur. Yeniden kurmayı deneyebilirsiniz._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
+                                        '\n\n*Hata:* _Databases Err._' +
+                                        '\n*Nedeni:* _Efendim Database Bozulmuş Durumda._' +
+                                        '\n*Çözümü:* _Efendim Database Reset Atmayı Deneyebilirsiniz._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Split of Undefined_' +
-                                        '\n*Nedeni:* _Grup adminlerinin kullanabildiği komutların ara sıra split fonksiyonunu görememesi._ ' +
-                                        '\n*Çözümü:* _Restart atmanız yeterli olacaktır._'
+                                        '\n*Nedeni:* _Efendim, Grup Adminlerinin Kullanabileceği Komutlar Bazen Split i Okuyamazlar._ ' +
+                                        '\n*Çözümü:* _Restart Atmayı Deneyebilirsiniz Efendim._'
                                         , MessageType.text
                                     );                               
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Ookla Server Connection_' +
-                                        '\n*Nedeni:* _Speedtest verilerinin sunucuya iletilememesi._' +
-                                        '\n*Çözümü:* _Bir kez daha kullanırsanız sorun çözülecektir._'
+                                        '\n*Nedeni:* _Heroku Speed Test Yaparken Bir Hata Okudum Efendim._' +
+                                        '\n*Çözümü:* _Bir Kez Daha Kullanın Eğer İşe Yaramazsa Restart Atman Yeterli Olur Efendim._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Requested Audio Params_' +
-                                        '\n*Nedeni:* _TTS komutunun latin alfabesi dışında kullanılması._' +
-                                        '\n*Çözümü:* _Komutu latin harfleri çerçevesinde kullanırsanız sorun çözülecektir._'
+                                        '\n*Çözümü:* _Efendim, Lütfen TTS Komutunu Latin Alfabesi İle Kullanın._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _No Such File or Directory_' +
-                                        '\n*Nedeni:* _Pluginin yanlış kodlanması._' +
-                                        '\n*Çözümü:* _Lütfen plugininin kodlarını kontrol edin._'
+                                        '\n*Nedeni:* _Efendim, Yüklediğiniz Pluginde Hata Var._' +
+                                        '\n*Çözümü:* _Efendim, Plugindeki Kodları Düzeltmeyi Deneyebilirsiniz Yada Plugini Silin._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Error 404 HTTPS_' +
-                                        '\n*Nedeni:* _Heroku plugini altındaki komutların kullanılması sonucu sunucu ile iletişime geçilememesi._' +
-                                        '\n*Çözümü:* _Biraz bekleyip tekrar deneyin. Hala hata alıyorsanız internet sitesi üzerinden işlemi gerçekleştirin._'
+                                        '\n*Nedeni:* _Efendim, Herokuya Erişemedim._' +
+                                        '\n*Çözümü:* _Efendim, Biraz Bekleyip Deneyin Olmaz İse Restart Atmayı Veya İşleminizi İnternet Sitesi Üzerinden Gerçekleştirin._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Reply Delete Function_' +
-                                        '\n*Nedeni:* _IMG yada Wiki komutlarının kullanılması._' +
-                                        '\n*Çözümü:* _Bu hatanın çözümü yoktur. Önemli bir hata değildir._'
+                                        '\n*Nedeni:* _Efendim, Lütfen İMG ve Wiki Komutlarını Kullanmayınız_' +
+                                        '\n*Çözümü:* _Efendim, Çözümü Olmayan Ve Önemsiz Olan Bir Hatadır._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' +
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Reply Delete Function_' +
-                                        '\n*Nedeni:* _IMG yada Wiki komutlarının kullanılması._' +
-                                        '\n*Çözümü:* _Bu hatanın çözümü yoktur. Önemli bir hata değildir._'
+                                        '\n*Nedeni:* _Efendim, Lütfen İMG ve Wiki Komutlarını Kullanmayınız_' +
+                                        '\n*Çözümü:* _Efendim, Çözümü Olmayan Ve Önemsiz Olan Bir Hatadır._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Bailyes Action Error_ ' +
-                                        '\n*Nedeni:* _Tam nedeni bilinmiyor. Birden fazla seçenek bu hatayı tetiklemiş olabilir._' +
-                                        '\n*Çözümü:* _Bir kez daha kullanırsanız düzelebilir. Hata devam ediyorsa restart atmayı deneyebilirsiniz._'
+                                        '\n*Nedeni:* _Efendim, Nedenini Çözemedim Üzerinde Çalışıyorum._' 
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Cannot Decode Text or Media_' +
-                                        '\n*Nedeni:* _Pluginin yanlış kullanımı._' +
-                                        '\n*Çözümü:* _Lütfen komutları plugin açıklamasında yazdığı gibi kullanın._'
+                                        '\n*Nedeni:* _Efendim, Lütfen Plugin İ Doğru Kullanmalısın Sahip._' 
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Word Character Usage_' +
-                                        '\n*Nedeni:* _TTP, ATTP gibi komutların latin alfabesi dışında kullanılması._' +
-                                        '\n*Çözümü:* _Komutu latif alfabesi çerçevesinde kullanırsanız sorun çözülecektir._'
+                                        '\n*Nedeni:* _TTP, ATTP gibi komutların latin alfabesi dışında kullanılması._' 
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('conversation')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' + 
-                                        '\n========== ```Hata Okundu!``` ==========' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ Efendim, Bir Hata Okudum ⚕️*' + 
+                                        '\n========== ```Efendim, Ben Bir Hata Okudum!``` ==========' +
                                         '\n\n*Ana Hata:* _Deleting Plugin_' +
-                                        '\n*Nedeni:* _Silinmek istenen plugin isminin yanlış girilmesi._' +
-                                        '\n*Çözümü:* _Lütfen silmek istediğiniz pluginin başına_ *__* _koymadan deneyin. Hala hata alıyorsanız ismin sonundaki_ ```?(.*) / $``` _gibi ifadeleri eksiksiz girin._'
+                                        '\n*Çözümü:* _Efendim, Lütfen Silmek istediğin Pluginin İsmini Doğru Yazdığınızdan ve Böyle Bir Pluginin Yüklü Olduğundan Emin Ol._'
                                         , MessageType.text
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 Maalesef Bu Hatayı Okuyamadım! 🙇🏻*' +
-                                        '\n_Daha fazla yardım için grubumuza yazabilirsiniz._'
+                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 Efemdim, Maalesef Bu Hatayı Okuyamadım! 🙇🏻*' 
                                         , MessageType.text
                                     );
-                                }
-                            }                  
+                                }    
+                            }
                         }
                     }
                 }

@@ -649,7 +649,7 @@ if (Config.WORKTYPE == 'private') {
           });
         };
         await download(r_text[i], '/root/WhatsAsenaDuplicated/wwp.png', async() => {                          
-          await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/wwp.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+          await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/wwp.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
         })
     }));
 }
@@ -1288,7 +1288,7 @@ else if (Config.WORKTYPE == 'public') {
           });
         };
         await download(r_text[i], '/root/WhatsAsenaDuplicated/wwp.png', async() => {                          
-          await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/wwp.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+          await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/wwp.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*'})
         })
     }));   
 }

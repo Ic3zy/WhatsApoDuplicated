@@ -9,7 +9,7 @@ This code works with unlimited and completely free an API scraper.
 Don't use it for illegal purposes.
 */
 
-const thiccysapi = require('textmaker-thiccy'); // Import NPM Package
+const thiccysapi = require('textmaker-npm'); // Import NPM Package
 
 const Asena = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
@@ -384,7 +384,7 @@ Asena.addCommand({pattern: 'textdevil ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/devil.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/devil.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/devil.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -403,7 +403,7 @@ Asena.addCommand({pattern: 'textsci ?(.*)', fromMe: wk, dontAddCommandList: true
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/sci.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/sci.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/sci.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -413,7 +413,7 @@ Asena.addCommand({pattern: 'textsci ?(.*)', fromMe: wk, dontAddCommandList: true
 Asena.addCommand({pattern: 'textleaf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/dark-green-typography-online-359.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'textmatrix ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/matrix-text-effect-154.html')
@@ -448,42 +448,42 @@ Asena.addCommand({pattern: 'text5graf ?(.*)', fromMe: wk, dontAddCommandList: tr
 Asena.addCommand({pattern: 'text3fire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/dragon-fire-text-effect-111.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'text2space ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-galaxy-style-free-name-logo-438.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*'})
 }));
 Asena.addCommand({pattern: 'text3space ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/galaxy-text-effect-116.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'textgold ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/modern-gold-3-212.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'text3space ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/galaxy-text-effect-116.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'textangel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/wings-galaxy-206.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'text2pink ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-a-blackpink-neon-logo-text-effect-online-710.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'textabear ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-funny-animations-of-a-traveling-bear-701.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.gif })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*', mimetype: Mimetype.gif })
 }));
 Asena.addCommand({pattern: 'text6neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-light-effects-green-neon-online-429.html')
@@ -493,42 +493,42 @@ Asena.addCommand({pattern: 'text6neon ?(.*)', fromMe: wk, dontAddCommandList: tr
 Asena.addCommand({pattern: 'textheart ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/write-name-on-heart-with-wings-gifs-430.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.gif })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*', mimetype: Mimetype.gif })
 }));
 Asena.addCommand({pattern: 'text4graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/text-graffiti-3d-208.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'textpuppy ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-puppy-cute-animated-online-478.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.gif })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*', mimetype: Mimetype.gif })
 }));
 Asena.addCommand({pattern: 'textroad ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-glowing-text-effects-online-706.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'textsad ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/write-text-on-wet-glass-online-589.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'text3pubg ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-the-cover-game-playerunknown-s-battlegrounds-401.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
 }));
 Asena.addCommand({pattern: 'textpubg ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var vid = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-pubg-style-glitch-video-avatar-554.html')
     var buffer_data = await axios.get(vid.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.mp4 })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*', mimetype: Mimetype.mp4 })
 }));
 Asena.addCommand({pattern: 'text2pubg ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var vid = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/lightning-pubg-video-logo-maker-online-615.html')
     var buffer_data = await axios.get(vid.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.mp4 })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*', mimetype: Mimetype.mp4 })
 }));
 Asena.addCommand({pattern: 'text2devil ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     thiccysapi.textpro("https://textpro.me/create-green-horror-style-text-effect-online-1036.html",
@@ -542,7 +542,7 @@ Asena.addCommand({pattern: 'text2devil ?(.*)', fromMe: wk, dontAddCommandList: t
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/devil2.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/devil2.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/devil2.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -570,7 +570,7 @@ Asena.addCommand({pattern: 'texthub ?(.*)', fromMe: wk, dontAddCommandList: true
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/hub.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/hub.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/hub.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -598,7 +598,7 @@ Asena.addCommand({pattern: 'textretro ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/retr.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/retr.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/retr.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -617,7 +617,7 @@ Asena.addCommand({pattern: 'text3graf ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t3gr.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t3gr.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t3gr.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -636,7 +636,7 @@ Asena.addCommand({pattern: 'textberry ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/bry.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/bry.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/bry.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -655,7 +655,7 @@ Asena.addCommand({pattern: 'text4sand ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t4snd.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t4snd.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t4snd.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -674,7 +674,7 @@ Asena.addCommand({pattern: 'text3sand ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t3snd.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t3snd.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t3snd.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -693,7 +693,7 @@ Asena.addCommand({pattern: 'text2sand ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t2snd.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t2snd.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t2snd.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -712,7 +712,7 @@ Asena.addCommand({pattern: 'textsand ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/snd.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/snd.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/snd.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -731,7 +731,7 @@ Asena.addCommand({pattern: 'text2fire ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/fh.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/fh.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/fh.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -750,7 +750,7 @@ Asena.addCommand({pattern: 'textpink ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/tpink.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tpink.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tpink.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -769,7 +769,7 @@ Asena.addCommand({pattern: 'text2blood ?(.*)', fromMe: wk, dontAddCommandList: t
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/cbld.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cbld.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cbld.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -788,7 +788,7 @@ Asena.addCommand({pattern: 'textblood ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/bld.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/bld.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/bld.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -807,7 +807,7 @@ Asena.addCommand({pattern: 'text2light ?(.*)', fromMe: wk, dontAddCommandList: t
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t2lgh.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t2lgh.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t2lgh.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -826,7 +826,7 @@ Asena.addCommand({pattern: 'textrobo ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/robo.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/robo.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/robo.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -854,7 +854,7 @@ Asena.addCommand({pattern: 'text3d ?(.*)', fromMe: wk, dontAddCommandList: true}
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/3dl.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/3dl.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/3dl.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -873,7 +873,7 @@ Asena.addCommand({pattern: 'textart ?(.*)', fromMe: wk, dontAddCommandList: true
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/tart.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tart.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tart.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -892,7 +892,7 @@ Asena.addCommand({pattern: 'textwcolor ?(.*)', fromMe: wk, dontAddCommandList: t
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/wcolor.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/wcolor.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/wcolor.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -911,7 +911,7 @@ Asena.addCommand({pattern: 'textmagma ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/magma.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/magma.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/magma.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -930,7 +930,7 @@ Asena.addCommand({pattern: 'textmetal ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/metal.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/metal.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/metal.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -949,7 +949,7 @@ Asena.addCommand({pattern: 'textpaper ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/papert.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/papert.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/papert.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -968,7 +968,7 @@ Asena.addCommand({pattern: 'textbglass ?(.*)', fromMe: wk, dontAddCommandList: t
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/glass.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/glass.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/glass.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -987,7 +987,7 @@ Asena.addCommand({pattern: 'text5neon ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t5neon.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t5neon.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t5neon.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1006,7 +1006,7 @@ Asena.addCommand({pattern: 'textgradient ?(.*)', fromMe: wk, dontAddCommandList:
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/tgrone.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tgrone.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tgrone.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1025,7 +1025,7 @@ Asena.addCommand({pattern: 'text2harry ?(.*)', fromMe: wk, dontAddCommandList: t
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/hp2n.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/hp2n.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/hp2n.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1044,7 +1044,7 @@ Asena.addCommand({pattern: 'textstone ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/stone.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/stone.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/stone.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1063,7 +1063,7 @@ Asena.addCommand({pattern: 'textbear ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/bear.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/bear.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/bear.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1091,7 +1091,7 @@ Asena.addCommand({pattern: 'textwolf ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/wolf.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/wolf.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/wolf.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1110,7 +1110,7 @@ Asena.addCommand({pattern: 'textneon ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/neon.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/neon.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/neon.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1129,7 +1129,7 @@ Asena.addCommand({pattern: 'text2neon ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/neon2.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/neon2.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/neon2.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1148,7 +1148,7 @@ Asena.addCommand({pattern: 'textlight ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/li.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/li.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/li.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1167,7 +1167,7 @@ Asena.addCommand({pattern: 'textjoker ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/joker.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/joker.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/joker.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1195,7 +1195,7 @@ Asena.addCommand({pattern: 'textninja ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/ninja.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/ninja.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/ninja.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1214,7 +1214,7 @@ Asena.addCommand({pattern: 'textglitter ?(.*)', fromMe: wk, dontAddCommandList: 
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/tt.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tt.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tt.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1233,7 +1233,7 @@ Asena.addCommand({pattern: 'textbokeh ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/bkh.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/bkh.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/bkh.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1261,7 +1261,7 @@ Asena.addCommand({pattern: 'textmarvel ?(.*)', fromMe: wk, dontAddCommandList: t
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/marvel.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/marvel.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/marvel.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1289,7 +1289,7 @@ Asena.addCommand({pattern: 'text2marvel ?(.*)', fromMe: wk, dontAddCommandList: 
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/mar2.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/mar2.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/mar2.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1317,7 +1317,7 @@ Asena.addCommand({pattern: 'textavengers ?(.*)', fromMe: wk, dontAddCommandList:
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/aven.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/aven.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/aven.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1344,7 +1344,7 @@ Asena.addCommand({pattern: 'text2glitch ?(.*)', fromMe: wk, dontAddCommandList: 
                   });
               };
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t2gl.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t2gl.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t2gl.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1372,7 +1372,7 @@ Asena.addCommand({pattern: 'textglitch ?(.*)', fromMe: wk, dontAddCommandList: t
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/tt2.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tt2.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tt2.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1400,7 +1400,7 @@ Asena.addCommand({pattern: 'textgraf ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/ttgra.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/ttgra.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/ttgra.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1428,7 +1428,7 @@ Asena.addCommand({pattern: 'text2graf ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t2gra.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t2gra.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t2gra.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1456,7 +1456,7 @@ Asena.addCommand({pattern: 'textlion ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/lion.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/lion.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/lion.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1475,7 +1475,7 @@ Asena.addCommand({pattern: 'text3neon ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/neon3.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/neon3.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/neon3.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1494,7 +1494,7 @@ Asena.addCommand({pattern: 'textice ?(.*)', fromMe: wk, dontAddCommandList: true
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/ice.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/ice.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/ice.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1522,7 +1522,7 @@ Asena.addCommand({pattern: 'textspace ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/space.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/space.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/space.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1541,7 +1541,7 @@ Asena.addCommand({pattern: 'textsmoke ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/smoke.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/smoke.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/smoke.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1556,7 +1556,7 @@ Asena.addCommand({pattern: 'textglow ?(.*)', fromMe: wk, dontAddCommandList: tru
     };
     var uri = encodeURI(match[1])
     await download(`https://api.xteam.xyz/photooxy/neonlight?text=${uri}&APIKEY=da5fb2b73ae3e451`, '/root/WhatsAsenaDuplicated/glowttp.png', async() => {                          
-        await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/glowttp.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+        await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/glowttp.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
     })
 }));
 Asena.addCommand({pattern: 'textfire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
@@ -1571,7 +1571,7 @@ Asena.addCommand({pattern: 'textfire ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/tfire.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tfire.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tfire.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1590,7 +1590,7 @@ Asena.addCommand({pattern: 'textharry ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/hp.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/hp.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/hp.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1609,7 +1609,7 @@ Asena.addCommand({pattern: 'text4neon ?(.*)', fromMe: wk, dontAddCommandList: tr
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t4n.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t4n.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t4n.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1628,7 +1628,7 @@ Asena.addCommand({pattern: 'textcemetery ?(.*)', fromMe: wk, dontAddCommandList:
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/cmth.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cmth.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cmth.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)
@@ -1647,7 +1647,7 @@ Asena.addCommand({pattern: 'textcup ?(.*)', fromMe: wk, dontAddCommandList: true
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/cup.png', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cup.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cup.png'), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby: Abdullah*' })
               })
           } catch(err) { 
               console.log(err)

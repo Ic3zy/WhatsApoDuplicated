@@ -28,11 +28,11 @@ Asena.addCommand({pattern: 'animepic ?(.*)', fromMe: wk, desc: pic, usage: 'anim
   if (match[1] == 'normal') {
     var image_link = await WhatsAsenaStack.anime_wall('normal')
     var image_buffer = await axios.get(image_link, { responseType: 'arraybuffer' })
-    await message.sendMessage(Buffer.from(image_buffer.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(image_buffer.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*' })
   } else if (match[1] == 'nsfw') {
     var image_link_nsfw = await WhatsAsenaStack.anime_wall('nsfw')
     var image_buffer_nsfw = await axios.get(image_link_nsfw, { responseType: 'arraybuffer' })
-    await message.sendMessage(Buffer.from(image_buffer_nsfw.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
+    await message.sendMessage(Buffer.from(image_buffer_nsfw.data), MessageType.image, { mimetype: Mimetype.png, caption: '*Codedby:Abdullah*' })
   } else {
     return await message.client.sendMessage(message.jid,wr_usage,MessageType.text)
   }
@@ -46,7 +46,7 @@ Asena.addCommand({pattern: 'animegif ?(.*)', fromMe: wk, desc: giff, usage: 'ani
       });
     };
     await download(gif_link, '/root/WhatsAsenaDuplicated/pic.mp4', async() => {                          
-      await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/pic.mp4'), MessageType.video, { caption: 'Made by WhatsAsena', mimetype: Mimetype.gif })
+      await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/pic.mp4'), MessageType.video, { caption: '*Codedby:Abdullah*', mimetype: Mimetype.gif })
     })
   } else if (match[1] == 'nsfw') {
     var gif_link_nsfw = await WhatsAsenaStack.anime_gif('nsfw')
@@ -56,7 +56,7 @@ Asena.addCommand({pattern: 'animegif ?(.*)', fromMe: wk, desc: giff, usage: 'ani
       });
     };
     await download(gif_link_nsfw, '/root/WhatsAsenaDuplicated/picn.mp4', async() => {                          
-      await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/picn.mp4'), MessageType.video, { caption: 'Made by WhatsAsena', mimetype: Mimetype.gif })
+      await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/picn.mp4'), MessageType.video, { caption: '*Codedby:Abdullah*', mimetype: Mimetype.gif })
     })
   } else {
     return await message.client.sendMessage(message.jid,wr_usage,MessageType.text)

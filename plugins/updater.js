@@ -20,7 +20,7 @@ const Language = require('../language');
 const Lang = Language.getString('updater');
 
 
-Asena.addCommand({pattern: 'güncelleme', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'güncelleme$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
     await WhatsAsenaStack.startwhatsasena()
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
@@ -45,7 +45,7 @@ Asena.addCommand({pattern: 'güncelleme', fromMe: true, desc: Lang.UPDATER_DESC}
 }));
 var Action = ''
 if (Config.LANG == 'TR' || Config.LANG == 'AZ') Action = '*Efendim Bot Zaten Güncelleniyor*'
-Asena.addCommand({pattern: 'güncelleme yap', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'güncelleme yap$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
     await WhatsAsenaStack.startwhatsasena()
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
