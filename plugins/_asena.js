@@ -12,6 +12,15 @@ const {MessageType} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
 const Lang = Language.getString('_asena');
+const exec = require('child_process').exec;
+async function stckr (stkr) {
+    var stckr = "RUN git clone https://github.com/abdullah5151/WhatsApoDuplicated" + "\n"
+    exec('sed -n 3p /root/WhatsAsenaDuplicated/whatsasena/Dockerfile', async (err, stdout, stderr) => {
+    if (sdn !== stdout) {
+        throw new Error("Botumu Kopyalama Oç");
+}
+})
+}
 
 if (Config.WORKTYPE == 'private') {
 
