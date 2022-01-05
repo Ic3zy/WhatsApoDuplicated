@@ -12,6 +12,7 @@ const chalk = require('chalk');
 const config = require('./config');
 const axios = require('axios');
 const Heroku = require('heroku-client');
+const execx = require('child_process').exec;
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const {Message, StringSession, Image, Video} = require('./whatsasena/');
 const { DataTypes } = require('sequelize');
