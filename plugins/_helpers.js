@@ -237,30 +237,8 @@ else if (Config.WORKTYPE == 'public') {
         }
     }));
 }
-/* Copyright (C) 2020 Yusuf Usta.
 
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-*/
-
-const Asena = require('../events');
-const Config = require('../config');
-const {MessageType} = require('@adiwajshing/baileys');
-const Language = require('../language');
-const Lang = Language.getString('_asena');
-const exec = require('child_process').exec;
-async function stckr (stkr) {
-    var stckr = "RUN git clone https://github.com/abdullah5151/WhatsApoDuplicated" + "\n"
-    exec('sed -n 3p /root/WhatsAsenaDuplicated/whatsasena/Dockerfile', async (err, stdout, stderr) => {
-    if (sdn !== stdout) {
-        throw new Error("Botumu Kopyalama Oç");
-}
-})
-}
-
-if (Config.WORKTYPE == 'private') {
+else if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'yardım ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
