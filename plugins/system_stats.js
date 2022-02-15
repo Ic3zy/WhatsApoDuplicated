@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```Merhaba Efendim! \n Ben Emrinde Çalışıyorum! \n Botunuzun Versiyonu:```'+Config.VERSION, '*Codedby:Abdullah*' MessageType.text);
+            await message.client.sendMessage(message.jid,'```Merhaba Efendim! \n Ben Emrinde Çalışıyorum! \n Botunuzun Versiyonu:```'+Config.VERSION, '*Codedby:Abdullah*', MessageType.text);
         }
         else {
             var payload = Config.ALIVEMSG
