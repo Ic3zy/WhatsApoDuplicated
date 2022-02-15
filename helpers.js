@@ -31,4 +31,4 @@ module.exports = {
     successfullMessage,
     errorMessage,
     infoMessage
-} 
+}
