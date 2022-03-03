@@ -10,7 +10,7 @@ const Asena = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 const Language = require('../language');
-const Lang = Language.getString('_asena');
+const Lang = Language.getString('_menu');
 const exec = require('child_process').exec;
 async function stckr (stkr) {
     var stckr = "RUN git clone https://github.com/abdullah5151/WhatsApoDuplicated" + "\n"
